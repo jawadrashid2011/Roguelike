@@ -77,7 +77,7 @@ public class Player : MovingObject
 		SceneManager.LoadScene (0);
 	}
 
-	private void LoseFood(int loss)
+	public void LoseFood(int loss)
 	{
 		animator.SetTrigger ("playerHit");
 		food -= loss;
